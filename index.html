@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Happy Shop</title>
+</head>
+
+<body>
+    <header>
+        <ul class="nav-row">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Contact</li>
+            <li>Login</li>
+            <a class='text-white toggle-bar' id="toggle" onclick="openNav()">☰</a>
+        </ul>
+    </header>
+    <section>
+        <ul class="side-drawer" id="side-bar">
+            <div class="side-li" id="side-li">
+                <li class="text-danger " onclick="closeNav()">&times</li>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </div>
+        </ul>
+    </section>
+
+    <section class="row container mx-auto main-div">
+        <div class="col-md-6 order-md-1 order-2">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <h1>LED TV</h1>
+                <h3>$120</h3>
+                <button class="btn btn-success">BUY NOW</button>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-2 order-1">
+            <img src="./images/led.jpg" class="img-fluid tv-img" />
+        </div>
+
+    </section>
+    <main class="row container mx-auto">
+        <div class="col-lg-4 col-md-6">
+            <div class="main-card">
+                <img src="./images/nokia.jpg" class="img-fluid tv" />
+                <div class="description d-flex flex-column align-items-center justify-content-center mt-3 mb-3">
+                    <h4>Macbook</h4>
+                    <h3>$200</h3>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="main-card">
+                <img src="./images/laptop.jpg" class="img-fluid tv" />
+                <div class="description d-flex flex-column align-items-center justify-content-center mt-3 mb-3">
+                    <h4>Macbook</h4>
+                    <h3>$200</h3>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="main-card">
+                <div id="camera">
+                    <img src="./images/camera.jpg" class="img-fluid" />
+                </div>
+                <div class="description d-flex flex-column align-items-center justify-content-center mt-5 mb-3">
+                    <h4>Macbook</h4>
+                    <h3>$200</h3>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
